@@ -85,3 +85,21 @@ let secondPerson = {
 
 secondPerson.print();
 -------------------------------------ObjectInJs-----------------------------------------------*/
+
+/*-------------------------------------Class-----------------------------------------------
+class person {
+  constructor(name, miaka) {
+    this.noun = name;
+    this.age = miaka;
+  }
+  statement() {
+    return `My name is ${this.noun} and my age is ${this.age}`;
+  }
+}
+let firstPerson = new person("Herman", 18);
+let secondPerson = new person("Queenii");
+console.log(firstPerson.statement());
+
+
+-------------------------------------Class-----------------------------------------------
+*/
