@@ -8,6 +8,7 @@ console.log(name3);
 ------------------------destructurisation---------------------------------------
 */
 
+/*--------------------- MethodsOnArrays------------------------------------------
 let names = ["Hans", "Ania", "Adam"];
 let secondNames = ["Kabuzi", "Malekani", "Malakai"];
 let arrayLength = names.push("Monika"); // this helps us to add an element at the end of an array.
@@ -41,3 +42,46 @@ let filteredArray = names.filter((element, index) => {
 });
 
 console.log(filteredArray);
+
+
+--------------------- MethodsOnArrays------------------------------------------
+
+*/
+
+/*-------------------------------------ObjectInJs-----------------------------------------------
+// we have created an object with a method printName;
+var person = {
+  name: "hans",
+  height: 180,
+  printName: function () {
+    console.log(`my hight is ${this.height}`); // the keyword 'this' is used when we want to refer to our internal fields or methond swithin the object itself.
+  },
+};
+// call one element of the object.
+console.log(person.name);
+person.printName();
+// we can also get to an element using the key into brackets.
+console.log(person["name"]);
+// to change the internal value of a field, we can refer to it in the same way as when we read data.
+person.height = 181;
+
+// in case we would like to add an element in the object we can do it like this.
+person.age = "20 Years";
+console.log(person);
+let { name, height } = person;
+console.log(name, height);
+// in ES6 we can create the object  the same way but using let and we can also create a method easily , see below.
+
+let secondPerson = {
+  name: "Reed",
+  secondName: "Kabuzi",
+  height: 190,
+  print() {
+    console.log(
+      `My name is ${this.name} ${this.secondName} and my height is ${this.height} `
+    );
+  },
+};
+
+secondPerson.print();
+-------------------------------------ObjectInJs-----------------------------------------------*/
