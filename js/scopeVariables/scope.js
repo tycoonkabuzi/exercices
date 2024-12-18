@@ -103,3 +103,49 @@ console.log(firstPerson.statement());
 
 -------------------------------------Class-----------------------------------------------
 */
+/*-------------------------------------inheritance-----------------------------------------------
+class Line {
+  constructor(length = 0) {
+    this.len = length;
+  }
+  setLength(length) {
+    this.len = length;
+  }
+}
+
+let linia = new Line(123); // created an object from the class Line
+linia.setLength(200); // here we change the value of lenght by using the method setLength that we have created prior in the class Line
+console.log(linia);
+
+class Rectangle extends Line {
+  constructor(width = 0, len = 0) {
+    super(len); // always start by calling the element we need from the parent. which means that we are not allowed to start by this.width and then go to super()
+    this.wid = width;
+  }
+  setWidth(width) {
+    this.wid = width;
+  }
+}
+
+class Cuboid extends Rectangle {
+  constructor(height = 0, width = 0, length = 0) {
+    super(width, length);
+    this.height = height;
+  }
+  setHeight(height) {
+    this.height = height;
+  }
+}
+
+let rectangle = new Rectangle(202, 22);
+let line = new Line();
+let cuboid = new Cuboid(12, 33, 53);
+cuboid.setHeight(1000);
+cuboid.setWidth(2000);
+cuboid.setLength(550);
+console.log(cuboid);
+rectangle.setLength(12);
+rectangle.setWidth(12);
+console.log(line, rectangle, cuboid);
+
+-------------------------------------inheritance-----------------------------------------------*/
