@@ -149,3 +149,34 @@ rectangle.setWidth(12);
 console.log(line, rectangle, cuboid);
 
 -------------------------------------inheritance-----------------------------------------------*/
+/*-------------------------------------Math-----------------------------------------------*/
+/*-------------------------------------ReversedString-----------------------------------------------
+// exercice REVERSED STRING
+function reversedString(text) {
+  let stringArray = text.split("");
+  let reversedStringArray = stringArray.reverse();
+  let textReversed = reversedStringArray.join("");
+  console.log(textReversed);
+}
+reversedString("Akademia108");
+-------------------------------------ReversedString-----------------------------------------------*/
+
+/*-------------------------------------SortedLetters-----------------------------------------------
+function sortedString(text) {
+  let textArray = text.split(""); // convert string to array
+  let sortedArray = textArray.sort();
+  let textReversed = sortedArray.join("");
+  console.log(textReversed);
+}
+
+sortedString("Akademia108");
+-------------------------------------SortedLetters-----------------------------------------------*/
+
+/* Write a function with local variables that calculates the sum and product of the elements of the array [1, 2, 3, 4, 5, 6]. 
+  The function takes one parameter - the array of numbers. The function does not return anything. 
+  The function displays the results in the console.
+
+  Do the homework using the service https://repl.it.
+
+  Hint before submitting the task for review:
+  - Use a for loop or forEach in the task.*/
