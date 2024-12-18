@@ -179,4 +179,28 @@ sortedString("Akademia108");
   Do the homework using the service https://repl.it.
 
   Hint before submitting the task for review:
-  - Use a for loop or forEach in the task.*/
+  - Use a for loop or forEach in the task.
+  
+  */
+/*-----------------------SumAndProduct---------------------------------------------
+function sumAndProduct(numbers) {
+  let sum = 0;
+  let product = !0;
+  for (i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+    product *= numbers[i];
+  }
+  console.log(sum);
+  console.log(product);
+}
+sumAndProduct([2, 3, 10]);
+-----------------------SumAndProduct---------------------------------------------*/
+
+/*
+Write a function with local variables that calculates the sum and product of the elements of the array [1, 2, 3, 4, 5, 6]. The function takes one parameter - the array of numbers. The function does not return anything. The function displays the results in the console.
+
+Do the homework using the service https://repl.it.
+
+Hint before submitting the task for review:
+- Use a for loop or forEach in the task.
+*/
