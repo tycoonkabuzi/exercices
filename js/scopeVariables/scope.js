@@ -197,10 +197,81 @@ sumAndProduct([2, 3, 10]);
 -----------------------SumAndProduct---------------------------------------------*/
 
 /*
-Write a function with local variables that calculates the sum and product of the elements of the array [1, 2, 3, 4, 5, 6]. The function takes one parameter - the array of numbers. The function does not return anything. The function displays the results in the console.
+Write a function with local variables that calculates the sum of the squares of the elements of the array [0,1,2,3,4,5].
+ The function takes one parameter - the array of numbers. 
+ The function returns the sum of the squares. Display the result of the function in the console.
 
-Do the homework using the service https://repl.it.
+As a solution, send a link to your project on https://repl.it.
 
 Hint before submitting the task for review:
-- Use a for loop or forEach in the task.
+- Use the loop and the Math class in the task.
 */
+/*function sumOfsquareElement(arrayInput) {
+  let squaredArray = [];
+  let sum = 0;
+  arrayInput.forEach((element, index) => {
+    squaredArray.push(Math.pow(element, 2));
+    sum += squaredArray[index];
+  });
+
+  return sum;
+}
+
+console.log(sumOfsquareElement([0, 1, 2, 3, 4, 5, 6]));
+*/
+// let a = 1;
+// let b = 0;
+
+// for (let i = 0; i < 10; i++) {
+//   let result = a + b;
+//   a = b;
+//   b = result;
+//   console.log(result);
+// }
+// JSON.stringify
+// let theArr = [1, 2, 3, 5];
+// let jsonWorkers = {
+//   pracownicy: [
+//     { firstName: "Krystian", lastName: "Dziopa" },
+//     { firstName: "Anna", lastName: "Szapiel" },
+//     { firstName: "Piotr", lastName: "Zmuda" },
+//   ],
+// };
+// let data = JSON.stringify(jsonWorkers);
+// console.log(jsonWorkers);
+// theArr.forEach((element) => {
+//   console.log(element);
+// });
+
+//EXERCICE on BOOK Object
+// class Book {
+//   constructor(title, author, read) {
+//     this.title = title;
+//     this.author = author;
+//     this.read = read;
+//   }
+//   describeBook() {
+//     return `The book is titled ${this.title}, the author is ${
+//       this.author
+//     } and ${this.read ? "it has been read" : "it has'nt been read"}`;
+//   }
+// }
+
+// let firstBook = new Book("A la recherche du Bonheur", "Henry Speaker", false);
+// let secondBook = new Book("Creed", "Michael B.", true);
+// let thirdBook = new Book("Money Making", "Elionore Mba", false);
+// let library = [];
+// library.push(firstBook, secondBook, thirdBook);
+
+// function countReadBooks(arrayOfObjects) {
+//   let counter = 0;
+//   arrayOfObjects.forEach((element) => {
+//     if (element.read) {
+//       counter++;
+//     }
+//     console.log(element.describeBook());
+//   });
+//   return `${counter} book${counter <= 1 ? " is " : "s are "}read`;
+// }
+
+// console.log(countReadBooks(library));
