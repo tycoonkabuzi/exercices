@@ -294,4 +294,19 @@ console.log(sumOfsquareElement([0, 1, 2, 3, 4, 5, 6]));
 // }
 // console.log(numbers);
 
-/* ----------------------------------------- DOMEXERCICE--------------------------------------------------*/
+/* ----------------------------------------- DOMEXERCICE--------------------------------------------------
+WHAT IS DOM
+console.log(`Outside height of the window ${window.outerHeight}`); // here we access the value of the window's height
+console.log(`Inside height of the window ${window.innerHeight}`);
+
+window.document.write("<h2>Tycoon</h2>");
+// DOCUMENT (Object)
+console.log(document.location); // location of our html file.
+console.log(document.doctype);
+console.log(document.body);
+console.log(document);
+console.log(document.documentElement);
+
+*/
+
+/* ----------------------------------------- ACCESSING THE DOM--------------------------------------------------*/
