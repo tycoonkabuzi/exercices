@@ -309,4 +309,42 @@ console.log(document.documentElement);
 
 */
 
-/* ----------------------------------------- ACCESSING THE DOM--------------------------------------------------*/
+/* ----------------------------------------- ACCESSING THE DOM--------------------------------------------------
+let articles = document.getElementById("articles"); //getElementByID
+let paragraph = document.querySelector(".content"); // take the element like in Css, this take only the first element
+
+// Methods returning HTML collection
+
+let paragraphs = document.getElementsByClassName("content");
+let allParagraphs = document.getElementsByTagName("h1");
+
+let paragraphsContent = document.querySelectorAll("p.content");
+console.log(paragraphsContent[2]);
+----------------------------------------ACCESSING THE DOM -------------------------------------------------------
+*/
+/*-----------------------children.childrenNodes-------------------------------------------------------------------
+let header = document.querySelector(".post-header");
+console.log(header.childNodes); // here to find the childNodes, all elements in the document, spaces everything.
+console.log(header.children); // html child of this element.
+--------------------------children.childrenNodes------------------------------------------------------------------*/
+
+/*-----------------------------------------NAVIGATING THE DOM TREE--------------------------------------------------*/
+
+let header = document.getElementById("post-header");
+// console.log(header.firstChild); // first child of a node
+// console.log(header.firstElementChild); // first element or first child of childs of an html element
+// console.log(header.lastChild); //last child of a node
+// console.log(header.lastElementChild); // Last element of the element.
+let firstElementChild = header.firstElementChild;
+let lastElenentChild = header.lastElementChild;
+let parentNode = firstElementChild.parentNode;
+let parent = firstElementChild.parentElement; // this is how we get the parent from the element
+
+// console.log(firstElementChild.nextSibling); // next node sibling
+// console.log(firstElementChild.nextElementSibling); // next element sibling
+// console.log(lastElenentChild.previousElementSibling); // previous node sibling
+// console.log(lastElenentChild.previousElementSibling); // previous element sibling
+
+//console.log(firstElementChild.hasChildNodes()); // this is to check if the element firstElement has child nodes. and it returns a boolean
+//console.log(firstElementChild.children.length > 0 ? true : false); // This element has children
+// console.log(firstElementChild.closest("section")); // finds the closest ansestor based on the selector
