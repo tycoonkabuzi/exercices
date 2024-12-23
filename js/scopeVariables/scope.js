@@ -275,3 +275,21 @@ console.log(sumOfsquareElement([0, 1, 2, 3, 4, 5, 6]));
 // }
 
 // console.log(countReadBooks(library));
+// bubble sort
+
+// let numbers = [
+//   12, 67, 34, 23.01, 24, 2, 56, 8, 0x10, 23.02, 78, 34, 1e2, 45, 67, 98, 1,
+// ];
+
+// function swapElement(array, index1, index2) {
+//   [array[index2], array[index1]] = [array[index1], array[index2]];
+// }
+
+// for (let i = 0; i < numbers.length; i++) {
+//   for (let j = 0; j < numbers.length - 1; j++) {
+//     if (numbers[j] > numbers[j + 1]) {
+//       swapElement(numbers, j, j + 1);
+//     }
+//   }
+// }
+// console.log(numbers);
