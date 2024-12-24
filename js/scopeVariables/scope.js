@@ -425,3 +425,27 @@ for (element of theList.children) {
   element.setAttribute("id", "blueDots"); // here we crate an attribute and we give it a name
 }
 --------------------------SETTING AND MODIFYING HTML ELEMENT ATTRIBUTES-------------------------*/
+
+/*--------------------------SETTING AND GETTING HTML ELEMENT CLASSES-------------------------
+let list = document.getElementById("list");
+let firstElement = list.firstElementChild;
+let lastElement = list.lastElementChild;
+firstElement.setAttribute("class", "blueviolet");
+lastElement.setAttribute("class", "red");
+firstElement.className = firstElement.className + " first";
+lastElement.classList.add("last");
+lastElement.classList.add("better");
+lastElement.classList.remove("better");
+lastElement.classList.toggle("better"); // add a class in case it doesnt already exist there it removes it
+console.log(list);
+
+
+----------------------------SETTING AND GETTING HTML ELEMENT CLASSES-------------------------*/
+
+/*--------------------------ADDING AND CHANGING CSS STYLES OF HTML ELEMENTS-------------------------
+let list = document.getElementById("list");
+let firstElement = list.firstElementChild;
+let lastElement = list.lastElementChild;
+firstElement.style.color = "blue";
+console.log(list);
+---------------------------ADDING AND CHANGING CSS STYLES OF HTML ELEMENTS-------------------------*/

@@ -1,0 +1,10 @@
+.blueviolet {
+  color: blueviolet;
+}
+.red {
+  color: red;
+}
+.first,
+.last {
+  text-transform: upperCase;
+}
