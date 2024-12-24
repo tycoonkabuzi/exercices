@@ -362,7 +362,8 @@ theList = document.getElementById("list");
 theList.appendChild(liElement);
 console.log(theList);
 ----------------------------------------CREATING NODES -------------------------------------------*/
-//--------------------------------------ADDING NODES TO THE dom tree-------------------------------
+
+/*--------------------------------------ADDING NODES TO THE dom tree-------------------------------
 let documentFragment = new DocumentFragment(); // this is like a transition container where we can store the element we would like to append and we append them at the end which will put this object to an empty object
 theList = document.getElementById("list");
 let liElement = document.createElement("li"); //create the element
@@ -394,3 +395,33 @@ theList.lastElementChild.insertAdjacentText(
   "Salut comment allez vous ?"
 );
 console.log(theList);
+--------------------------------------ADDING NODES TO THE dom tree-------------------------------*/
+
+/*----------------------------------------REMOVING NODES FROM THE DOM Tree--------------------------------
+
+let list = document.getElementById("list");
+// remove an attribute
+list.removeAttribute("id");
+
+// removeChild we reomoved the last element child
+list.removeChild(list.lastElementChild);
+list.lastElementChild.remove();
+console.log(list);
+----------------------------------------REMOVING NODES FROM THE DOM Tree--------------------------------*/
+
+/*-----------------------------CHANGING TEXT AND MARKUP IN HTML ELEMENTS------------------------------------
+let header = document.querySelector("h1");
+header.innerHTML = "<h2>The lord is my sheperd</h2>"; // change the Inside of an HTML
+header.outerHTML = "<h3> I am more than your brother</h3>";
+header.innerText = "Bonjourno La famillia";
+console.log();
+----------------------------CHANGING TEXT AND MARKUP IN HTML ELEMENTS------------------------------------*/
+
+/*--------------------------SETTING AND MODIFYING HTML ELEMENT ATTRIBUTES-------------------------
+
+let theList = document.getElementById("list");
+
+for (element of theList.children) {
+  element.setAttribute("id", "blueDots"); // here we crate an attribute and we give it a name
+}
+--------------------------SETTING AND MODIFYING HTML ELEMENT ATTRIBUTES-------------------------*/
