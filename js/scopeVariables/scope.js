@@ -365,8 +365,32 @@ console.log(theList);
 //--------------------------------------ADDING NODES TO THE dom tree-------------------------------
 let documentFragment = new DocumentFragment(); // this is like a transition container where we can store the element we would like to append and we append them at the end which will put this object to an empty object
 theList = document.getElementById("list");
-let liElement = document.createElement("li"); //
-documentFragment.appendChild(liElement);
-theList.appendChild(documentFragment);
+let liElement = document.createElement("li"); //create the element
+liElement.textContent = "Seventh"; // assign the text to the li
+let theClass = document.createAttribute("class"); // we create an attribute, which could have been a class an ID or whatever.
+theClass.value = "last"; // we assign a name to that attribute.
+liElement.setAttributeNode(theClass); //we attach the attribue to the LI element
+documentFragment.appendChild(liElement); //we attach the LI to the fragment.
+theList.appendChild(documentFragment); // we attach the whole fragment to the html file where we need it to appear
 
+//insertbefore()
+theList.insertBefore(liElement, theList.firstElementChild); // we put the element to the first position as the first child we could also put it on the second last by just assigning to the last position and write .previousElementSibling, and we can move the element for as much as we need to pull it up.
+//replaceChild()
+theList.replaceChild(
+  liElement,
+  theList.lastElementChild.previousElementSibling
+); // this completely remove the the second last element and replace it by what we have added ourselves in other words liElement
+//insertAdjacentElement
+
+theList.insertAdjacentElement("afterbegin", liElement); // afterbegin, afterend, beforebegin,beforeend , these are strings which can be use as parameters for this method
+
+//insertAdjacentHTML
+theList.firstElementChild.insertAdjacentHTML("beforebegin", "<li>Zero</>"); // same method like the previous one, however for this one we will add the html manually
+
+//insertAdjacentText
+
+theList.lastElementChild.insertAdjacentText(
+  "beforeend",
+  "Salut comment allez vous ?"
+);
 console.log(theList);
