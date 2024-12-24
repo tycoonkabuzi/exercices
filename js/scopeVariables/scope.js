@@ -328,23 +328,45 @@ console.log(header.childNodes); // here to find the childNodes, all elements in 
 console.log(header.children); // html child of this element.
 --------------------------children.childrenNodes------------------------------------------------------------------*/
 
-/*-----------------------------------------NAVIGATING THE DOM TREE--------------------------------------------------*/
+/*-----------------------------------------NAVIGATING THE DOM TREE-------------------------------------------------
 
-let header = document.getElementById("post-header");
-// console.log(header.firstChild); // first child of a node
-// console.log(header.firstElementChild); // first element or first child of childs of an html element
-// console.log(header.lastChild); //last child of a node
-// console.log(header.lastElementChild); // Last element of the element.
-let firstElementChild = header.firstElementChild;
-let lastElenentChild = header.lastElementChild;
-let parentNode = firstElementChild.parentNode;
-let parent = firstElementChild.parentElement; // this is how we get the parent from the element
+// let header = document.getElementById("post-header");
+// // console.log(header.firstChild); // first child of a node
+// // console.log(header.firstElementChild); // first element or first child of childs of an html element
+// // console.log(header.lastChild); //last child of a node
+// // console.log(header.lastElementChild); // Last element of the element.
+// let firstElementChild = header.firstElementChild;
+// let lastElenentChild = header.lastElementChild;
+// let parentNode = firstElementChild.parentNode;
+// let parent = firstElementChild.parentElement; // this is how we get the parent from the element
 
-// console.log(firstElementChild.nextSibling); // next node sibling
-// console.log(firstElementChild.nextElementSibling); // next element sibling
-// console.log(lastElenentChild.previousElementSibling); // previous node sibling
-// console.log(lastElenentChild.previousElementSibling); // previous element sibling
+// // console.log(firstElementChild.nextSibling); // next node sibling
+// // console.log(firstElementChild.nextElementSibling); // next element sibling
+// // console.log(lastElenentChild.previousElementSibling); // previous node sibling
+// // console.log(lastElenentChild.previousElementSibling); // previous element sibling
 
-//console.log(firstElementChild.hasChildNodes()); // this is to check if the element firstElement has child nodes. and it returns a boolean
-//console.log(firstElementChild.children.length > 0 ? true : false); // This element has children
-// console.log(firstElementChild.closest("section")); // finds the closest ansestor based on the selector
+// //console.log(firstElementChild.hasChildNodes()); // this is to check if the element firstElement has child nodes. and it returns a boolean
+// //console.log(firstElementChild.children.length > 0 ? true : false); // This element has children
+// // console.log(firstElementChild.closest("section")); // finds the closest ansestor based on the selector
+-----------------------------------------NAVIGATING THE DOM TREE--------------------------------------------------*/
+
+/*----------------------------------------CREATING NODES -------------------------------------------
+
+let liElement = document.createElement("li"); //
+let txtNode = document.createTextNode("Fourth");
+let attrNode = document.createAttribute("class");
+attrNode.value = "last";
+liElement.appendChild(txtNode); // It is added last after all the children
+liElement.setAttributeNode(attrNode);
+theList = document.getElementById("list");
+theList.appendChild(liElement);
+console.log(theList);
+----------------------------------------CREATING NODES -------------------------------------------*/
+//--------------------------------------ADDING NODES TO THE dom tree-------------------------------
+let documentFragment = new DocumentFragment(); // this is like a transition container where we can store the element we would like to append and we append them at the end which will put this object to an empty object
+theList = document.getElementById("list");
+let liElement = document.createElement("li"); //
+documentFragment.appendChild(liElement);
+theList.appendChild(documentFragment);
+
+console.log(theList);
