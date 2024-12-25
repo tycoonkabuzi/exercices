@@ -450,7 +450,7 @@ firstElement.style.color = "blue";
 console.log(list);
 ---------------------------ADDING AND CHANGING CSS STYLES OF HTML ELEMENTS-------------------------*/
 
-//---------------------------REGISTERING EVENTS HANDLERS---------------------------------------------
+/*---------------------------REGISTERING EVENTS HANDLERS---------------------------------------------
 let btnResult = document.getElementById("result");
 // const result = () => {
 //   console.log("Clicked");
@@ -463,3 +463,17 @@ btnResult.addEventListener("click", () => {
   // done through an annonymous fonction
   console.log("Done");
 });
+---------------------------REGISTERING EVENTS HANDLERS---------------------------------------------*/
+
+/*---------------------------REMOVE EVENT HANDLERS---------------------------------------------
+let btnResult = document.getElementById("result");
+const result = () => {
+  console.log("Clicked");
+};
+btnResult.addEventListener("click", result);
+btnResult.removeEventListener("click", result); // this has to take two arguments as the add eventlistener, the action and the function
+btnResult.removeAttribute("onClick");// we remove it from the HTML page as we could remove anothre attribute like class etc.
+btnResult.onclick = result;
+btnResult.onclick = null; // to remove the previous one
+getEventListener()// this is a method we use in the console and this help us get all the event listerns on a button this can help during debuginng
+---------------------------REMOVE EVENT HANDLERS---------------------------------------------*/
