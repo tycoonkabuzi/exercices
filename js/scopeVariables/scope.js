@@ -477,3 +477,34 @@ btnResult.onclick = result;
 btnResult.onclick = null; // to remove the previous one
 getEventListener()// this is a method we use in the console and this help us get all the event listerns on a button this can help during debuginng
 ---------------------------REMOVE EVENT HANDLERS---------------------------------------------*/
+
+/*---------------------------EVENT OBJECT PROPERTIES AND EVENT CONTROL---------------------------------------------
+let btnResult = document.getElementById("result");
+// const result = (e) => {
+//   console.log(e); // we can access the event parameter and see all the information we can access eg. type, height etc.
+//   console.log(e.type);
+// };
+// btnResult.addEventListener("click", (e) => {
+//   e.preventDefault(); // prevent to go to the next page or open another page
+//   console.log("Went to Chat GPT");
+// });
+
+for (let btn of document.querySelectorAll("ul a")) {
+  btn.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (btn.innerText == "Edit") {
+      console.log("Editing");
+    } else if (btn.innerText == "Delete") {
+      console.log("deleting");
+    } else {
+      console.log("You are clicking in the blank");
+    }
+  });
+  btn.closest(".post-header").addEventListener("click", () => {
+    console.log("Touched something");
+  });
+}
+
+// the event.stopPropagation() helps to only access one data if the data is in a set of data where there could be a confusion when it is clicked.
+ 
+---------------------------EVENT OBJECT PROPERTIES AND EVENT CONTROL---------------------------------------------*/
