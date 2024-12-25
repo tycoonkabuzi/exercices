@@ -449,3 +449,17 @@ let lastElement = list.lastElementChild;
 firstElement.style.color = "blue";
 console.log(list);
 ---------------------------ADDING AND CHANGING CSS STYLES OF HTML ELEMENTS-------------------------*/
+
+//---------------------------REGISTERING EVENTS HANDLERS---------------------------------------------
+let btnResult = document.getElementById("result");
+// const result = () => {
+//   console.log("Clicked");
+// };
+
+//btnResult.onclick = result; // the name of the function and not result()
+//using addEventListener
+//btnResult.addEventListener("click", result);
+btnResult.addEventListener("click", () => {
+  // done through an annonymous fonction
+  console.log("Done");
+});
