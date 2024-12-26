@@ -8,3 +8,6 @@
 .last {
   text-transform: upperCase;
 }
+#auxClick {
+  background-color: red;
+}
