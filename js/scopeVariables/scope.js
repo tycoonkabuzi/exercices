@@ -508,3 +508,119 @@ for (let btn of document.querySelectorAll("ul a")) {
 // the event.stopPropagation() helps to only access one data if the data is in a set of data where there could be a confusion when it is clicked.
  
 ---------------------------EVENT OBJECT PROPERTIES AND EVENT CONTROL---------------------------------------------*/
+
+/*---------------------------MOUSE EVENT---------------------------------------------
+// aux click
+
+let theRightClick = document.getElementById("auxClick");
+if (theRightClick) {
+  theRightClick.addEventListener("auxclick", (e) => {
+    console.log(`${e.currentTarget} we are clicked`);
+  });
+} else {
+  console.log("nothing Happened.");
+}
+
+//contextmenu : this is triggered when we click the right click or for some computers(mac) when we click with two fingers.
+
+let theRightClick = document.getElementById("auxClick");
+if (theRightClick) {
+  theRightClick.addEventListener("contextmenu", (e) => {
+    console.log(`${e.currentTarget} we are clicked`);
+  });
+} else {
+  console.log("nothing Happened.");
+}
+
+//dbclick : is when we double click
+
+let theRightClick = document.getElementById("auxClick");
+if (theRightClick) {
+  theRightClick.addEventListener("dbclick", (e) => {
+    console.log(`${e.currentTarget} we have double clicked`);
+  });
+} else {
+  console.log("nothing Happened.");
+}
+
+// mousedown is when we click and don't release the finger from the mouse, mouse up is triggered whenever we release our finger
+
+let theRightClick = document.getElementById("auxClick");
+if (theRightClick) {
+  theRightClick.addEventListener("mousedown", (e) => {
+    console.log(`${e.currentTarget} the mouse was moved`);
+  });
+} else {
+  console.log("nothing Happened.");
+}
+
+
+// mouseenter is triggered whenever we hover the mouse on the element
+let theRightClick = document.getElementById("auxClick");
+if (theRightClick) {
+  theRightClick.addEventListener("mouseenter", (e) => {
+    console.log(`${e.target} is triggered`);
+  });
+} else {
+  console.log("nothing Happened.");
+}
+
+// mouseleave it is the reverse result of the mouseenter, this is whenever I leave the element it is triggered
+let theRightClick = document.getElementById("auxClick");
+if (theRightClick) {
+  theRightClick.addEventListener("mouseleave", (e) => {
+    console.log(`${e.target} You left`);
+  });
+} else {
+  console.log("nothing Happened.");
+}
+
+// mousemove whenever we move the mouse
+let theRightClick = document.getElementById("auxClick");
+if (theRightClick) {
+  theRightClick.addEventListener("mousemove", (e) => {
+    console.log(`${e.target} You left`);
+  });
+} else {
+  console.log("nothing Happened.");
+}
+
+// mouseover works similarly like the mouseenter
+let theRightClick = document.getElementById("auxClick");
+if (theRightClick) {
+  theRightClick.addEventListener("mouseover", (e) => {
+    console.log(`${e.target} You left`);
+  });
+} else {
+  console.log("nothing Happened.");
+}
+  // mouseout works 
+let theRightClick = document.getElementById("auxClick");
+if (theRightClick) {
+  theRightClick.addEventListener("mouseout", (e) => {
+    console.log(`${e.target} mouseout`);
+  });
+} else {
+  console.log("nothing Happened.");
+
+  // mouseup is triggerd whenever we release the mouse after the click
+let theRightClick = document.getElementById("auxClick");
+if (theRightClick) {
+  theRightClick.addEventListener("mouseup", (e) => {
+    console.log(`${e.target} mouseout`);
+  });
+} else {
+  console.log("nothing Happened.");
+}
+
+//wheel this is triggered whenever we scroll
+let theRightClick = document.getElementById("auxClick");
+if (theRightClick) {
+  theRightClick.addEventListener("wheel", (e) => {
+    console.log(`${e.target} scrooll`);
+  });
+} else {
+  console.log("nothing Happened.");
+}
+
+---------------------------MOUSE EVENT---------------------------------------------*/
