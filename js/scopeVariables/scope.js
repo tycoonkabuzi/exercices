@@ -624,6 +624,7 @@ if (theRightClick) {
 }
 
 ---------------------------MOUSE EVENT---------------------------------------------*/
+
 /*---------------------------KEYBOARD EVENTS---------------------------------------------
 // keyDown all the keys even the ctrl,command,delete etc
 const inputElement = document.getElementById("inputText");
@@ -680,3 +681,27 @@ inputElement.addEventListener("keyup", (e) => {
 });
 
 ---------------------------KEYBOARD EVENTS---------------------------------------------*/
+
+/*---------------------------FORM EVENTS---------------------------------------------
+// The first event  is the submit event, which is sending our form, and the second event is reset, which is restoring the default appearance of the form and the default values in the form fields.
+
+let formulaire = document.getElementById("formulaire");
+function displaySubmition(e) {
+  let email = document.getElementById("email");
+  let password = document.getElementById("password");
+  if (email && password != "") {
+    console.log(
+      `your email is "${email.value}" and your password "${password.value}"`
+    );
+  } else {
+    console.log("You did not write anything");
+  }
+  e.preventDefault();
+}
+
+formulaire.addEventListener("submit", displaySubmition);
+formulaire.addEventListener("reset", () => {
+  console.log("It is reset from");
+});
+
+---------------------------FORM EVENTS---------------------------------------------*/
