@@ -705,3 +705,19 @@ formulaire.addEventListener("reset", () => {
 });
 
 ---------------------------FORM EVENTS---------------------------------------------*/
+
+/*---------------------------FOCUS EVENTS---------------------------------------------
+//focus: only at the element target with no propagation , focusin: propagation is made, blur:it does not propagate, focusout: it propagates.
+let inputs = document.querySelectorAll("input");
+let paragraphs = document.querySelectorAll("p");
+for (let anInput of inputs) {
+  anInput.addEventListener("focusin", (e) => {
+    e.target.classList.add("blueviolet");
+    e.target.previousElementSibling.style.color = "blue";
+  });
+  anInput.addEventListener("focusout", (e) => {
+    e.target.classList.remove("blueviolet");
+  });
+}
+
+---------------------------FOCUS EVENTS---------------------------------------------*/
