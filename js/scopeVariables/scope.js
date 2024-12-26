@@ -624,3 +624,59 @@ if (theRightClick) {
 }
 
 ---------------------------MOUSE EVENT---------------------------------------------*/
+/*---------------------------KEYBOARD EVENTS---------------------------------------------
+// keyDown all the keys even the ctrl,command,delete etc
+const inputElement = document.getElementById("inputText");
+inputElement.addEventListener("keydown", (e) => {
+  switch (e.key) {
+    case (e.key = "Meta"):
+      console.log("Command");
+      break;
+    case (e.key = "Alt"):
+      console.log("option");
+      break;
+    case (e.key = "Backspace"):
+      console.log("Delete");
+      break;
+    default:
+      console.log(`${e.key}`);
+  }
+});
+
+// keypress all keys except the ctrtl command delete etc.
+const inputElement = document.getElementById("inputText");
+inputElement.addEventListener("keypress", (e) => {
+  switch (e.key) {
+    case (e.key = "Meta"):
+      console.log("Command");
+      break;
+    case (e.key = "Alt"):
+      console.log("option");
+      break;
+    case (e.key = "Backspace"):
+      console.log("Delete");
+      break;
+    default:
+      console.log(`${e.key}`);
+  }
+});
+
+//keyup is whenever a key is released : no longer pressed that is when it is triggered
+const inputElement = document.getElementById("inputText");
+inputElement.addEventListener("keyup", (e) => {
+  switch (e.key) {
+    case (e.key = "Meta"):
+      console.log("Command key is released");
+      break;
+    case (e.key = "Alt"):
+      console.log("option key is released");
+      break;
+    case (e.key = "Backspace"):
+      console.log("Delete key is released");
+      break;
+    default:
+      console.log(`${e.key} key is released`);
+  }
+});
+
+---------------------------KEYBOARD EVENTS---------------------------------------------*/
