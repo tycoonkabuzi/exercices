@@ -721,3 +721,8 @@ for (let anInput of inputs) {
 }
 
 ---------------------------FOCUS EVENTS---------------------------------------------*/
+/*---------------------------TOUCHSCREEN  EVENTS---------------------------------------------
+
+// touchstart: it is triggered when we touch the touchscreen with our finger, touchend: once the touch is done we release the finger that is when the touchend will be triggered, touchmove: once we touch the screen and start moving ,touchcancel:when we use two or more fingers at once to stop the touch.
+
+---------------------------TOUCHSCREEN  EVENTS---------------------------------------------*/
