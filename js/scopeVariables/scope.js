@@ -778,4 +778,11 @@ const getTitleAndContent = () => {
 /*--------------------------------------FetchAPI-----------------------------------------------------
 
 
+// this is the easiest way, we only fetch the data with the method fetch, after that the response is transformed to json
+fetch("https://jsonplaceholder.org/posts")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data[0].title);
+  });
+
 --------------------------------------FetchAPI-----------------------------------------------------*/
