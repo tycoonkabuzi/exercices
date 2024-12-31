@@ -726,3 +726,56 @@ for (let anInput of inputs) {
 // touchstart: it is triggered when we touch the touchscreen with our finger, touchend: once the touch is done we release the finger that is when the touchend will be triggered, touchmove: once we touch the screen and start moving ,touchcancel:when we use two or more fingers at once to stop the touch.
 
 ---------------------------TOUCHSCREEN  EVENTS---------------------------------------------*/
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// AJAX, asynchronous Javascript and XML.
+
+/*--------------------------------------XMLHttpRequest-----------------------------------------------------
+-How to make AJAX requests using XMLHttpRequest(Less commonly used)
+
+const getTitleAndContent = () => {
+  //creating new object
+  let httpRe = new XMLHttpRequest();
+  // first of all we get the data using the open method, which takes two parameters the keyword GET and the link to the API.
+  httpRe.open("GET", "https://jsonplaceholder.org/posts");
+
+  // this triggers the connections, which means that there is a possibility there is no internet or a disruption or if the connection goes through we can now add our conditions.
+  httpRe.onreadystatechange = () => {
+    // status of readyState we can use:
+    // 0	UNSENT	Client has been created. open() not called yet.
+    // 1	OPENED	open() has been called.
+    // 2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+    // 3	LOADING	Downloading; responseText holds partial data.
+    // 4	DONE	The operation is complete.
+    if (httpRe.readyState == 3) {
+      console.log("loading");
+    }
+    if (httpRe.readyState === 4) {
+      if (httpRe.status === 200) {
+        // status code :https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses
+        // Informational responses (100 – 199)
+        // Successful responses (200 – 299)
+        // Redirection messages (300 – 399)
+        // Client error responses (400 – 499)
+        // Server error responses (500 – 599)
+        let data = httpRe.responseText;
+        let dataJSON = JSON.parse(data);
+        console.log(dataJSON);
+        console.log(dataJSON[0].title);
+        console.log(dataJSON[0].content);
+      }
+    }
+    //console.log(httpRe.readyState);
+  };
+  httpRe.send();
+};
+
+//setInterval(getTitleAndContent, 1000);
+
+--------------------------------------XMLHttpRequest-----------------------------------------------------*/
+
+/*--------------------------------------FetchAPI-----------------------------------------------------
+
+
+--------------------------------------FetchAPI-----------------------------------------------------*/
